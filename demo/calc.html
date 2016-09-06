@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>网页计算器</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/calc.css">
+</head>
+<body>
+  <div class="container">
+    <div class="outer">
+      <div class="author">By - pumpkin email:865756672@qq.com</div>
+      <div class="screen">
+        <input type="text" name="" readonly="readonly" maxlength="9" value="0" class="result">
+        <input type="text" name="" readonly="readonly" value="" class="formula">
+      </div>
+      <div class="button">
+        <ul class="up">
+          <li class="btn clear sign">C</li><li class="btn sign">％</li><li class="btn sign">÷</li><li class="btn sign">×</li>
+        </ul>
+        <ul class="up">
+          <li class="btn number">7</li><li class="btn number">8</li><li class="btn number">9</li><li class="btn sign">-</li>
+        </ul>
+        <ul class="up">
+          <li class="btn number">4</li><li class="btn number">5</li><li class="btn number">6</li><li class="btn sign">+</li>
+        </ul>
+        <ul class="up">
+          <li class="btn number">1</li><li class="btn number">2</li><li class="btn number">3</li><li class="btn equal">=</li>
+        </ul>
+        <ul class="zero">
+          <li class="btn number zero-l">0</li>
+          <li class="btn number zero-r">.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- js -->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/calc.js"></script>
+</body>
+</html>
