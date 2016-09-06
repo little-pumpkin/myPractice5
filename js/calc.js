@@ -8,7 +8,7 @@ window.onload = function() {
 		$('.btn')[i].onclick = function() {
 			switch(this.innerHTML) {
 				case 'C':
-					$('input')[0].value = 0;
+					$('.result')[0].value = 0;
 					$('.formula')[0].value = '';
 					break;
 				case '%':
