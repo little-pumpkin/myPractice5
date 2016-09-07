@@ -1,0 +1,65 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; 
+}
+
+.container {
+	width: 100%;
+	padding: 50px;
+	color: white;
+}
+
+.clock, .countdown {
+	width: 600px;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+.clock-time, .countdown-time {
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	text-align: center;
+	line-height: 100px;
+}
+
+.title {
+	color: green;
+	font-size: 30px;
+}
+
+.clock span {
+	font-size: 35px;
+	display: inline-block;
+	margin: auto 5px;
+}
+
+.hour, .min, .sec {
+	width: 70px;
+	height: 45px;
+	line-height: 45px;
+	background-color: white;
+	color: black;
+	border: 2px solid grey;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

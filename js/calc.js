@@ -48,7 +48,7 @@ window.onload = function() {
 
 		if(j) {
 			$('.formula')[0].value = $('.result')[0].value + a;
-			$('.result')[0].value = a;	
+			$('.result')[0].value = a;
 			j = false;
 		} else {
 			/[\%\/\*\-\+]$/.test($('.result')[0].value) 
