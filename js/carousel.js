@@ -38,8 +38,11 @@ $(document).ready(function() {
     });
   });
 
-});
+  $('.carousel li').on('click', function(evt) {
+  	$('.big-pic img')[0].src= evt.target.src; 
+  });
 
+});
 
 
 

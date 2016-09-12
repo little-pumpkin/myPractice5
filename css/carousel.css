@@ -6,7 +6,8 @@
 
 .container {
 	width: 100%;
-	padding: 100px;
+	min-width: 850px;
+	padding: 35px;
 }
 
 .carousel ul {
@@ -64,6 +65,18 @@
   height: 150px;
   background-color: green;
   padding-top: 65px;
+}
+
+.big-pic {
+	width: 604px;
+	height: 454px;
+	margin: 35px auto; 
+	border: 2px solid green;
+}
+
+.big-pic img {
+	width: 600px;
+	height: 450px;
 }
 
 
