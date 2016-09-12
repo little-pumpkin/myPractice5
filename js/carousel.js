@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	var first = $('.carousel li').first();
 	var last = $('.carousel li').last();
-	var liWidth = first.width();
+	var liWidth = first.width()+20;
 
   var carousel = $('.carousel ul');
   carousel
@@ -15,7 +15,7 @@ $(document).ready(function() {
   	.prepend( $('.carousel li').eq(6).clone())
   	.append( $('.carousel li').eq(5).clone());
 
-  	console.log($('.carousel li'));
+  	// console.log(liWidth);
 
   carousel.width(liWidth * $('.carousel li').length);
   carousel.css({left: -liWidth*3});
