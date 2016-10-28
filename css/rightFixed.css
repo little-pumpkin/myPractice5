@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background-color: #333333;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+.baidu-logo {
+	display: inline-block;
+	padding-left: 30px;
+}
+
+.baidu-logo img {
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.tab-link {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	font-size: 15px;
+}
+
+.tab-link ul {
+	list-style: none;
+}
+
+.tab-link li {
+	padding-right: 25px;
+	float: left;
+	color: white;
+	line-height: 60px;
+}
+
+.tab-link a {
+	text-decoration: none;
+	color: white;
+}
+
+.tab-link a:hover {
+	color: grey;
+}
+
+.content {
+	background-color: #ccc;
+	position: relative;
+	padding: 25px;
+	min-width: 875px;
+}
+
+.left-content {
+	min-width: 400px;
+	margin-right: 425px;
+	display: inline-block;
+	margin-top: 60px;
+}
+
+h5 {
+	color: grey;
+	line-height: 50px;
+}
+
+h2 {
+	line-height: 50px;
+}
+
+h4 {
+	line-height: 25px;
+	color: grey;
+}
+
+.text {
+	line-height: 30px;
+	text-indent: 2em;
+}
+
+.one-part {
+	padding: 30px 15px;
+	background-color: white;
+	border-right: 3px solid grey;
+	border-bottom: 3px solid grey;
+}
+
+.two-part {
+	padding: 30px 15px;
+	background-color: white;
+	margin-top: 25px;
+	border-right: 3px solid grey;
+	border-bottom: 3px solid grey;
+}
+
+.text-pic {
+	padding: 10px 0;
+}
+
+.two-list {
+	padding-left: 50px;
+}
+
+.two-list li {
+	list-style: none;
+}
+
+.three-pic {
+	padding: 30px 15px;
+	margin-top: 25px;
+	background-color: white;
+	border-right: 3px solid grey;
+	border-bottom: 3px solid grey;
+}
+
+.title-pic {
+	font-size: 25px;
+}
+
+.pic-container {
+	margin: 10px 0 0 10px;
+}
+
+.every-pic {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	display: inline-block;
+	margin: 5px; 
+}
+
+.every-pic div {
+	width: 100%;
+	height: 25px;
+	text-align: center;
+}
+
+.every-pic img {
+	width: 120px;
+	height: 95px;
+}
+
+.four-part {
+	padding: 30px 15px;
+	margin-top: 25px;
+	background-color: white;
+	border-right: 3px solid grey;
+	border-bottom: 3px solid grey; 
+}
+
+.four-text ol {
+	margin: 0 0 20px 50px;
+}
+
+.four-text li {
+	list-style: 
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+  border: none;
+  font-size: 15px;
+}
+
+table td {
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+
+table .table-header {
+	background-color: black;
+	color: white;
+}
+
+table .table-footer {
+	background-color: #ccc;
+}
+
+.right-content {
+	display: inline-block;
+	width: 360px;
+	background-color: white;
+	position: absolute;
+	right: 25px;
+	top: 85px;
+	padding: 20px;
+	border-right: 3px solid grey;
+	border-bottom: 3px solid grey;
+}
+
+.right-title {
+	padding: 5px 10px;
+	border-left: 4px solid #ccc;
+	font-size: 17px;
+}
+
+form {
+	padding: 10px;
+	font-size: 14px;
+}
+
+.left {
+	display: inline-block;
+	width: 100px;
+	padding: 10px 0;
+	text-align: right;
+}
+
+.right {
+	margin-left: 20px;
+	display: inline-block;
+	width: 60%;
+}
+
+.input {
+	width: 150px;
+}
+
+.sex-box input {
+	margin-left: 5px;
+	margin-right: 3px; 
+}
+
+.like input {
+	margin-left: 5px;
+	margin-right: 3px; 
+}
+
+textarea {
+	width: 200px;
+	height: 100px;
+	margin-top: 10px;
+}
+
+.describe .left {
+	float: left;
+}
+
+.btn {
+	width: 360px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: steelblue;
+	color: white;
+	border-radius: 8px;
+}
+
+.footer {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background-color: #333333;
+	color: white;
+	line-height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
