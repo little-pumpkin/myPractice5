@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%
+	height: auto;
+	padding: 50px;
+	font-size: 20px;
+}
+
+h2 div {
+	color: white;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 20px;
+	background-color: green;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+}
+
+.one {
+	width: 50px;
+}
+
+.two {
+	width: 700px;
+}
+
+th {
+	border: 1px solid green;
+	padding: 0 10px;
+	width: 40px;
+	line-height: 40px;
+}
+
+td {
+	border: 1px solid green;
+	padding: 0 10px;
+	width: 40px;
+	line-height: 40px;
+}
+
+.td-one, .td-three {
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.button input {
+	margin-right: 10px;
+}
+
+ol {
+	width: 800px;
+	padding-left: 20px;
+}
+
+ol li {
+	line-height: 40px;
+}
+
+.add {
+	width: 800px;
+	height: 40px;
+	margin: 30px 0;
+}
+
+.thing {
+	float: left;
+	width: 700px;
+	height: 40px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid green;
+	padding: 10px;
+}
+
+.submit {
+	font-size: 18px;
+	float: left;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	background-color: green;
+	color: white;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

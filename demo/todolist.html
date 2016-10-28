@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <title>To Do List</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/todolist.css">
+</head>
+<body>
+  <div class="container" ng-controller="ctrl">
+    <div class="outer">
+      <div class="panel" ng-cloak>
+        <!-- 标题 -->
+        <div class="title">
+          <h2>To Do List <div>{{(todos|filter: {complete : false}).length}}</div></h2>
+        </div>
+        <!-- btn -->
+        <div class="button" ng-repeat="btn in btns">
+          <label>
+            <input type="radio" name="tabbtn" value="{{btn}}" ng-checked="$first" ng-model="data.mode">{{btn}}
+          </label>
+        </div>
+        <!-- add -->
+        <div class="add">
+          <input type="text" name="" class="thing" placeholder="请输入待办事项" ng-model="newTodo.action" required>
+          <div class="submit" ng-click="addNewTodo(newTodo)">添加事项</div>
+        </div>
+        <!-- ng-switch -->
+        <div ng-switch on="data.mode">
+          <div ng-switch-default>
+            <table>
+              <tr>
+                <th class="one">#</th>
+                <th class="two">Action</th>
+                <th>Done</th>
+              </tr>
+              <tr ng-repeat="todo in todos">
+                <td class="td-one">{{$index+1}}</td>
+                <td>{{todo.action}}</td>
+                <td class="td-three"><input type="checkbox" name="1" ng-model="todo.complete"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div ng-switch-when="List">
+            <ol>
+              <li ng-repeat="todo in todos">
+                {{todo.action}}
+                <span ng-if="todo.complete">(Done)</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- js -->
+  <script type="text/javascript" src="../js/angular.min.js"></script>
+  <script type="text/javascript" src="../js/todolist.js"></script>
+</body>
+</html>
