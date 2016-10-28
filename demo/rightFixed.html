@@ -4,6 +4,7 @@
 	<title>页面布局练习</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/rightFixed.css">
+	<script src="../js/jquery.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -11,10 +12,10 @@
 			<div class="baidu-logo"><img src="../img/baidu-logo.png"></div>
 			<div class="tab-link">
 				<ul>
-					<li><a href="#one">导航链接一</a></li>
-					<li><a href="#two">导航链接二</a></li>
-					<li><a href="#three">导航链接三</a></li>
-					<li><a href="#four">导航链接四</a></li>
+					<li><a class="scroll" data-to="one">导航链接一</a></li>
+					<li><a class="scroll" data-to="two">导航链接二</a></li>
+					<li><a class="scroll" data-to="three">导航链接三</a></li>
+					<li><a class="scroll" data-to="four">导航链接四</a></li>
 				</ul>
 			</div>
 		</div>
@@ -202,5 +203,39 @@
 		</div>
 		<div class="footer">版权所有©小南瓜</div>
 	</div>
+	<script>
+    $(document).ready(function(){  
+      var p=0;
+      var t=0;  
+
+      $(window).scroll(function(){  
+        p = $(this).scrollTop();
+
+        if(t<=p){  //下滚  
+          $('.header').css({
+          	top: '-60px'
+          });
+        } else{  //上滚  
+          $('.header').css({
+          	position: 'fixed',
+          	top: '0'
+          });  
+        }
+
+        setTimeout(function(){
+        	t = p;
+        }, 0);         
+      });  
+    });  
+
+    $('.scroll').click(function(evt) {
+
+      var top = $('#' + evt.target.dataset.to)[0].offsetTop;
+
+      $('html,body').animate({
+        scrollTop : top + 'px'
+      }, 500);
+    });
+	</script>
 </body>
 </html>
