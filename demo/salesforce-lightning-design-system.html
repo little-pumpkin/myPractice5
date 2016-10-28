@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Charket Settings</title>
+	<link rel="stylesheet" type="text/css" href="../css/salesforce-lightning-design-system.min.css">
+	<style>
+		.header {
+			z-index: 100;
+		}
+		.left {
+			display: inline-block;
+			width: calc(100% - 200px);
+			padding-bottom: 50px;
+			border-right: 1px solid rgb(216, 221, 230);
+			border-bottom: 1px solid rgb(216, 221, 230);
+			margin-top: 50px;
+		}
+
+		.right {
+			display: inline-block;
+			width: 200px;
+			height: 500px;
+			border: 1px solid rgb(216, 221, 230);
+			vertical-align: top;
+			padding: 1.5rem;
+			padding-top: 60px;
+		}
+
+		.left-title {
+			border-bottom: 1px solid #c7ccce;
+			padding: 10px 0;
+			margin-bottom: 25px;
+		}
+
+		.left-bottom {
+			padding: 0 1.5rem;
+		}
+
+		.left table {
+			margin: 0 auto 30px;
+		}
+
+		.left table th {
+			padding-left: 0 !important;
+		}
+
+		.table-title {
+			padding: 10px 0;
+		}
+
+		.label {
+			width: 20% !important;
+			margin-right: 20px !important;
+		}
+
+		.account-title {
+			border-bottom: 0;
+			background: none;
+			padding-left: 0;
+			padding-bottom: 0.5rem;
+		}
+
+		.settings-title {
+			padding-left: 1.5rem;
+			border-bottom: 0;
+		}
+
+		.small-alert {
+			color: rgba(0, 0, 0, 0.4);
+		}
+
+		.input-pre {
+			width: 200px !important;
+		}
+
+		.horizontal-left {
+			text-align: left !important;
+		}
+
+		.element {
+			padding-bottom: 20px;
+		}
+
+		.button-save {
+			left: 45%;
+		}
+	</style>
+</head>
+<body>
+	<div>	
+		<!-- header -->
+		<div>
+			<header class="slds-global-header_container header"><a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Navigation</a><a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Main Content</a>
+			  <div class="slds-global-header slds-grid slds-grid--align-spread">
+			    <div class="slds-global-header__item">
+			      <div class="slds-global-header__logo">
+			        <img src="../sf-pic/logo.png" alt="" />
+			      </div>
+			    </div>
+			    <div class="slds-global-header__item slds-global-header__item--search">
+			      <div class="slds-form-element slds-lookup">
+			        <label class="slds-assistive-text" for="global-search-01">Search Salesforce</label>
+			        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--left">
+			          <svg aria-hidden="true" class="slds-input__icon">
+			            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+			          </svg>
+			          <input id="global-search-01" class="slds-input slds-lookup__search-input" type="search" placeholder="Search Salesforce" />
+			        </div>
+			      </div>
+			    </div>
+			    <ul class="slds-global-header__item slds-grid slds-grid--vertical-align-center">
+			      <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+			        <button class="slds-button" aria-haspopup="true">
+			          <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+			            <img src="../sf-pic/1.png"/>
+			          </span>
+			        </button>
+			      </li>
+			      <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+			        <button class="slds-button" aria-haspopup="true">
+			          <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+			            <img src="../sf-pic/2.png"/>
+			          </span>
+			        </button>
+			      </li>
+			      <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+			        <button class="slds-button" aria-haspopup="true">
+			          <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+			            <img src="../sf-pic/3.png"/>
+			          </span>
+			        </button>
+			      </li>
+			      <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+			        <button class="slds-button" aria-haspopup="true">
+			          <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+			            <img src="../sf-pic/4.png"/>
+			          </span>
+			        </button>
+			      </li>
+			      <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+			        <button class="slds-button" aria-haspopup="true">
+			          <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+			            <img src="../sf-pic/5.png"/>
+			          </span>
+			        </button>
+			      </li>
+			      <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+			        <button class="slds-button" aria-haspopup="true">
+			          <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+			            <img src="../sf-pic/1.png"/>
+			          </span>
+			        </button>
+			      </li>
+			    </ul>
+			  </div>
+			</header>
+		</div>
+		<!-- left -->
+		<div class="left">
+			<div class="slds-page-header settings-title">
+				<div class="slds-media">
+			    <div class="slds-media__figure">
+			    	<div class="slds-icon slds-icon-standard-opportunity"><img src="../sf-pic/pic.png"></div>
+			    </div>
+			    <div class="slds-media__body">
+			      <p class="slds-text-body--small">Charket</p>
+			      <p class="slds-page-header__title slds-truncate">Charket Settings</p>
+			    </div>
+			  </div>
+			</div>
+			<div class="left-bottom">
+				<div class="accounts">
+					<div class="slds-page-header account-title">
+					  <div class="slds-media slds-media--center">
+					    <div class="slds-media__body">
+					      <p class="slds-section__title">WeChat Accounts</p>
+					    </div>
+					    <div class="slds-media__figure slds-media__figure--reverse">
+					      <button class="slds-button slds-button--neutral">Link WeChat Account</button>
+					    </div>
+					  </div>
+					</div>
+
+					<table class="slds-table slds-table--bordered slds-table--cell-buffer">
+						<thead>
+					    <tr class="slds-text-title--caps">
+					      <th scope="col">
+					        <div class="slds-truncate">Column1</div>
+					      </th>
+					      <th scope="col">
+					        <div class="slds-truncate">Column2</div>
+					      </th>
+					      <th scope="col">
+					        <div class="slds-truncate">Column3</div>
+					      </th>
+					    </tr>
+					  </thead>
+					  <tbody>
+				      <tr>
+				        <th scope="row">
+				          <div class="slds-truncate">1</div>
+				        </th>
+				        <td>
+				          <div class="slds-truncate"></div>
+				        </td>
+				        <td>
+				          <div class="slds-truncate"></div>
+				        </td>
+				      </tr>
+				      <tr>
+				        <th scope="row">
+				          <div class="slds-truncate">2</div>
+				        </th>
+				        <td>
+				          <div class="slds-truncate"></div>
+				        </td>
+				        <td>
+				          <div class="slds-truncate"></div>
+				        </td>
+				      </tr>
+					  </tbody>
+					</table>
+				</div>
+				<div class="follow">
+					<h3 class="slds-section__title left-title">WeChat Follow Settings</h3>
+					<div class="slds-form--horizontal horizontal-left">
+					  <div class="slds-form-element element">
+					    <label class="slds-form-element__label label">Link WeChat Follower To</label>
+					    <div class="slds-form-element__control">
+				        <div class="slds-select_container input-pre">
+				          <select class="slds-select  input-pre">
+				            <option>--None--</option>
+				            <option>Lead</option>
+				            <option>Contact</option>
+				          </select>
+				        </div>
+				        <div class="small-alert">Create a Lead or Contact after a new WeChat follower sync from WeChat serve.</div>
+				      </div>
+					  </div>
+					</div>
+				</div>
+				<div class="agent">
+					<h3 class="slds-section__title left-title">WeChat Follow Settings</h3>
+					<div class="slds-form--horizontal horizontal-left">
+					  <div class="slds-form-element element">
+					    <label class="slds-form-element__label label">Chat Capacity</label>
+					    <div class="slds-form-element__control">
+				        <div class="slds-form-element__control">
+		              <input id="inputSample2" class="slds-input  input-pre" type="text"/>
+		            </div>
+				        <div class="small-alert">The maximum number of chats an agent can engage in simultaneously.</div>
+				      </div>
+					  </div>
+					</div>
+				</div>
+				<div class="handles">
+					<h3 class="slds-section__title left-title">WeChat Message and Event Handlers</h3>
+					<div class="slds-form--horizontal horizontal-left">
+						<div class="slds-form-element">
+							<label class="slds-form-element__label label">&nbsp;</label>
+					    <div class="slds-form-element__control element">
+					      <label class="slds-checkbox">
+					        <input name="default" type="checkbox"/>
+					        <span class="slds-checkbox--faux"></span>
+					        <span class="slds-form-element__label label">Enable Charket Default Handler</span>
+					        <div class="small-alert">Custom handlers are necessary to process all WeChat messages and events if the default handler is not enabled.</div>
+					      </label>
+					    </div>
+					    <div class="slds-form-element element">
+				        <label class="slds-form-element__label label" for="textareaSample2">Custome WeChat Message Handlers</label>
+				        <div class="slds-form-element__control">
+				          <textarea id="textareaSample2" class="slds-textarea"></textarea>
+				          <div class="small-alert">Use separate lines for multilie handlers</div>
+				        </div>
+				      </div>
+				      <div class="slds-form-element element">
+			          <label class="slds-form-element__label label" for="textareaSample2">Custome WeChat Event Handlers</label>
+			          <div class="slds-form-element__control">
+			            <textarea id="textareaSample2" class="slds-textarea"></textarea>
+				          <div class="small-alert">Use separate lines for multilie handlers</div>
+			          </div>
+			        </div>
+					  </div>
+					</div>
+				</div>
+				<button class="slds-button slds-button--brand button-save">Save</button>
+			</div>
+		</div><!-- right --><div class="right">
+			User Guide
+		</div>
+	</div>
+</body>
+</html>
