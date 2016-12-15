@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>pure CSS3 tab</title>
+  <style>
+    body {
+      padding: 50px;
+    }
+    
+    input, section {
+      clear: both;
+      display: none;
+    }
+
+    section {
+      width: 399px;
+      height: 150px;
+      border: 1px solid green;
+      border-top: 0;
+      padding: 5px 20px;
+      word-wrap: break-word;
+      overflow: hidden;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 14px;
+      display: block;
+      float: left;
+      padding: 10px 30px;
+      border-top: 2px solid transparent;
+      border-right: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-bottom: 1px solid green;
+    }
+
+    #tab1:checked ~ #content1,
+    #tab2:checked ~ #content2,
+    #tab3:checked ~ #content3,
+    #tab4:checked ~ #content4 {
+      display: block;
+    }
+
+    input:checked + label {
+      border-top-color: blue;
+      border-right-color: green;
+      border-left-color: green;
+      border-bottom-color: transparent;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <h2>CSS3 Tab</h2>
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1">section1</label>
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2">section2</label>
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3">section3</label>
+    <input id="tab4" type="radio" name="tabs">
+    <label for="tab4">section4</label>
+    
+    <section id="content1">
+      <p>section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1section1</p>
+    </section>
+    <section id="content2">
+      <p>section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2section2</p>
+    </section>
+    <section id="content3">
+      <p>section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3section3</p>
+    </section>
+    <section id="content4">
+      <p>section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4section4</p>
+    </section>
+  </div>
+</body>
+</html>
